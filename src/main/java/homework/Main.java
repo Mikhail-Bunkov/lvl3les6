@@ -17,14 +17,14 @@ public class Main {
     public static boolean array2(int[] arr){
         boolean a = false;
         boolean b = false;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]!= 1 && arr[i] != 4){
+        for (int j : arr) {
+            if (j != 1 && j != 4) {
                 return false;
             }
-            if(arr[i] ==1){
-               a = true;
+            if (j == 1) {
+                a = true;
             }
-            if(arr[i]==4){
+            if (j == 4) {
                 b = true;
             }
         }
