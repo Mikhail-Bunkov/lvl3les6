@@ -15,15 +15,19 @@ public class Main {
         throw new RuntimeException(" Array has no 4");
     }
     public static boolean array2(int[] arr){
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]!= 1 && arr[i] != 4){
+        boolean a = false;
+        boolean b = false;
+        for (int j : arr) {
+            if (j != 1 && j != 4) {
                 return false;
             }
-            if(arr[i] ==1){
-                for (int j = 0; j < ; j++) {
-                    
-                }
+            if (j == 1) {
+                a = true;
+            }
+            if (j == 4) {
+                b = true;
             }
         }
+        return a&&b;
     }
 }
